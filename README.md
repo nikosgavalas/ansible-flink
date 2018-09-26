@@ -22,7 +22,7 @@ Next, go ahead and edit the default values in the [flink](group_vars/flink) file
 Run the playbook with:
 
 ```
-ansible-playbook -i hosts site.yml
+ansible-playbook -i hosts.ini site.yml
 ```
 
 ### UI
