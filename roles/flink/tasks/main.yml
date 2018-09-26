@@ -1,5 +1,9 @@
 ---
 
+- name: Install Java 1.8
+  apt: name=openjdk-8-jdk state=present
+  become: True
+
 - name: Create directory
   become: True
   file:

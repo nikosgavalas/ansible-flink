@@ -1,5 +1,8 @@
 ---
 
+remote_user: ubuntu
+enable_services: True
+
 flink_version: 1.6.1-bin-scala_2.11  # latest
 flink_dir: /srv/flink
 

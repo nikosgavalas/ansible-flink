@@ -6,7 +6,6 @@
     src: taskmanager.service.j2
     dest: /etc/systemd/system/taskmanager.service
     mode: 0644
-  register: taskmanager_service_installed
 
 - name: Launch Flink TaskManager
   become: True
@@ -15,4 +14,3 @@
     state: started
     daemon_reload: True
     enabled: '{{ enable_services }}'
-  when: taskmanager_service_installed.changed

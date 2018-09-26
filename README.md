@@ -13,7 +13,7 @@ If you want you can set all the nodes to `slaves`, and execute the JobManager lo
 
 ### Configuration Variables
 
-Next, go ahead and edit the default values in the [flink](group_vars/flink) file, and the `remote_user` for your machines in the [all](group_vars/all) file.
+Next, go ahead and edit the default values in the [flink](group_vars/flink) file.
 
 ### Run
 
@@ -25,7 +25,7 @@ ansible-playbook -i hosts site.yml
 
 ### UI
 
-Visit the `master` host at the port 8081 to access the Flink's web UI.
+Visit the `master` host at the port 8081 to access the Flink's web UI. If the cluster is running properly, you can then submit tasks for execution.
 
 ## Important Notes
 
