@@ -1,0 +1,18 @@
+---
+
+- name: Install systemd unit
+  become: True
+  template:
+    src: jobmanager.service.j2
+    dest: /etc/systemd/system/jobmanager.service
+    mode: 0644
+  register: jobmanager_service_installed
+
+- name: Launch Flink JobManager
+  become: True
+  systemd:
+    name: jobmanager
+    state: started
+    daemon_reload: True
+    enabled: '{{ enable_services }}'
+  when: jobmanager_service_installed.changed

@@ -1,0 +1,5 @@
+{% for host in groups['flink'] %}
+{%   if hostvars[host]['flink_type'] == 'slave' %}
+{{     hostvars[host]['ansible_' + flink_network_iface]['ipv4']['address'] }}
+{%   endif %}
+{% endfor %}

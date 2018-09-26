@@ -1,0 +1,8 @@
+---
+# main playbook, run with `ansible-playbook -i hosts.ini site.yml`
+
+- name: Configure and deploy the flink cluster
+  hosts: flink
+  remote_user: '{{ remote_user }}'
+  roles:
+    - flink

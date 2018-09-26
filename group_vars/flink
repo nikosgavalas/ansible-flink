@@ -1,0 +1,14 @@
+---
+
+flink_version: 1.6.1-bin-scala_2.11  # latest
+flink_dir: /srv/flink
+
+flink_run_jobmanager_locally: False  # set to True only if you intend to run the JobManager locally
+flink_controller_ip: 10.8.0.6        # used only if flink_run_jobmanager_locally is set to True
+
+flink_jobmanager_heap_size: 1024m    # in MBs
+flink_jobmanager_rpc_port: 6123
+
+flink_taskmanager_heap_size: 1024m   # in MBs
+
+flink_network_iface: ens3            # needed to get the ipaddress of the master
