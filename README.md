@@ -39,4 +39,4 @@ There are plans to support highly availability in the near future.
 
 ### System Services
 
-Flink runs as a service with `systemd`, and by default it is `enabled` on system startup. Edit the corresponding variables to avoid such behavior. 
+Flink runs as a service with `systemd`, and by default it is `enabled` on system startup. Edit the corresponding variables if you don't want such behavior. 
