@@ -1,6 +1,8 @@
 
 # Standalone Apache Flink cluster deployment with Ansible
 
+The setup is the one described [here](https://ci.apache.org/projects/flink/flink-docs-release-1.6/ops/deployment/cluster_setup.html).
+
 ## Usage
 
 ### Hosts
