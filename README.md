@@ -37,7 +37,7 @@ This setup is **not** highly available, meaning that if the JobManager goes down
 
 Normally, a highly available setup contains a quorum of JobManagers, which requires Zookeeper.
 
-There are plans to support highly availability in the near future.
+There are plans to support high availability in the near future.
 
 ### System Services
 
