@@ -46,3 +46,7 @@ Flink runs as a service with `systemd`, and by default it is `enabled` on system
 ### Distributions Supported
 
 Currently only **deb** distributions are supported (ubuntu, debian), with `systemd`.
+
+### Software requirements
+
+Ansible version >= 2.2 and `jmespath` python package.
