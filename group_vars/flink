@@ -3,7 +3,7 @@
 remote_user: ubuntu
 enable_services: True                # set to true to enable flink services at system startup
 
-flink_version: 1.6.1-bin-scala_2.11  # latest
+flink_url: https://www-us.apache.org/dist/flink/flink-1.6.4/flink-1.6.4-bin-scala_2.11.tgz # change this accordingly
 flink_dir: /srv/flink
 
 flink_run_jobmanager_locally: False  # set to True only if you intend to run the JobManager locally

@@ -14,11 +14,11 @@
 - name: Download and extract
   become: True
   unarchive:
-    src: http://apache.forthnet.gr/flink/flink-1.6.1/flink-{{ flink_version }}.tgz
+    src: '{{ flink_url }}'
     dest: '{{ flink_dir }}'
     remote_src: True
-    owner: {{ remote_user }}
-    group: {{ remote_user }}
+    owner: '{{ remote_user }}'
+    group: '{{ remote_user }}'
     extra_opts: [--strip-components=1] # remove the top level directory
   when: flink_directory.changed
 
