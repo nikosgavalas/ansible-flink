@@ -37,8 +37,6 @@ This setup is **not** highly available, meaning that if the JobManager goes down
 
 Normally, a highly available setup contains a quorum of JobManagers, which requires Zookeeper.
 
-There are plans to support high availability in the near future.
-
 ### System Services
 
 Flink runs as a service with `systemd`, and by default it is `enabled` on system startup. Edit the corresponding variables if you don't want such behavior. 
@@ -50,3 +48,7 @@ Currently only **deb** distributions are supported (ubuntu, debian), with `syste
 ### Software requirements
 
 Ansible version >= 2.2 and `jmespath` python package.
+
+### About this repository
+
+This repo is now quite outdated. I do not plan to update it.
